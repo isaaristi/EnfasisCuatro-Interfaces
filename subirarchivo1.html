@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<title>Subir video | Administrador</title>
+</head>
+<body class="fondo">
+	<div align="center" class="contenedor">
+		<img src="imgs/cabezote-internas.jpg">	
+	<header id="header">
+		<table align="center" cellpadding="10px" style="padding: 0px 0px 0px 0px; text-align: center;">
+			<tr>
+				<td><a href="index1.html" class="botonInn latoIn">Home</a></td>
+				<td><a href="subirarchivo1.html" class="botonInn latoIn">Subir un video</a></td>
+				<td><a href="configuracion1.html" class="botonInn latoIn">Configuración de usuario</a></td>
+				<td><a href="login.html" class="botonInn latoIn">Cerrar sesión</a></td>
+			</tr>
+		</table>
+	</header>
+	<h1 class="lato">Sube el Video</h1>
+<form action="guardar.php" method="post" enctype="multipart/form-data">
+	<div class="usuarioForm">
+	<div class="text-center">
+			<p id="flashIncorrecto">
+             </p>
+		<table cellspacing="20" width="80%" align="center" >
+			<tr>
+				<td class="latoCont">Nombre del video</a></td>
+				<td width="500"><input type="text" name="Nombre" class="inputContacto"></input></td>
+			</tr>
+            <tr>
+				<td class="latoCont" width="300">Id del video</a></td>
+				<td width="500"><input type="text" name="Profesor" class="inputContacto"></input></td>
+			</tr>
+			<tr>
+				<td class="latoCont" width="300">Materia</a></td>
+				<td><select name="Materia">
+					<option selected="">Selecciona una materia...</option>
+					<option>Cálculo 1</option>
+					<option>Cálculo 2</option>
+					<option>Cálculo 3</option>
+					<option>Ecuaciones Diferenciales</option>
+					<option>Álgebra Lineal</option>
+					<option>Mecánica</option>
+					<option>Electromagnetismo</option>
+					<option>Vibraciones y Ondas</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td class="latoCont" width="300">Selecciona el archivo</a></td>
+				<td width="500"><input type="file" name="archivos" class="inputContacto"></input></td>
+			</tr>
+            <tr>
+				<td class="latoCont" width="300">Descripción</a></td>
+				<td width="500"><input type="text" name="Profesor" class="inputContacto"></input></td>
+			</tr>
+            <tr>
+				<td class="latoCont" width="300">Metadatos</a></td>
+				<td width="500"><input type="text" name="Profesor" class="inputContacto"></input></td>
+			</tr>
+			<tr>
+				<td class="latoCont" width="300">Competencias</a></td>
+				<td width="500"><input type="text" name="Profesor" class="inputContacto"></input></td>
+			</tr>
+		</table>
+		<input type=hidden value="1" name="enviado"><button class="botonIn lato" type="submit" name="enviar">Subir archivo</button>
+		<br><br>
+	</div>
+	</div>
+</form>
+	</div>
+	</body>
+</html>
